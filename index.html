@@ -12,7 +12,17 @@
 </head>
 
 <body ng-controller="MainController">
-  <h1>{{title}}<h1>
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" id="logo-link"><img src="/assets/img/logo.png" id="logo-img"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a ui-sref="aboutPage" role="presentation">About</a></li>
+        <li><a ui-sref="projectsPage" role="presentation">Projects</a></li>
+        <li><a ui-sref="contactPage" role="presentation">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
   <main ui-view class="content">
       <!-- PAGE TEMPLATES INSERT HERE -->
@@ -20,6 +30,9 @@
 
 
   <script src="/app.js"></script>
+  <script src="/app.routes.js"></script>
   <script src="/controllers/main.controller.js"></script>
+  <script src="/controllers/home.controller.js"></script>
+
 </body>
 </html>

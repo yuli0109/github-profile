@@ -4,10 +4,11 @@
     .module('myPortfolio')
     .controller('MainController', MainController);
 
-    MainController.$inject = ['$scope'];
+    MainController.$inject = ['$scope', '$state'];
 
-    function MainController($scope) {
+    function MainController($scope, $state) {
       $scope.title = 'Berry Zhong';
+      $scope.subTitle = 'Front End Developer'
     }
 
 })();
