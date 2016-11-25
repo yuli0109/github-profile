@@ -1,4 +1,4 @@
 (function(){
   'use strict';
-  angular.module('myPortfolio', ['ui.router'])
+  angular.module('myPortfolio', ['ui.router']);
 })()

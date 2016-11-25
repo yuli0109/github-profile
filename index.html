@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-<head ng-app="myPortfolio">
+<html ng-app="myPortfolio">
+<head>
   <meta charset="UTF-8">
   <title>Github Profile</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/bower_components/materialize/dist/css/materialize.min.css">
   <script src="/bower_components/jquery/dist/jquery.min.js"></script>
   <script src="/bower_components/materialize/dist/js/materialize.min.js"></script>
@@ -11,11 +12,12 @@
 </head>
 
 <body ng-controller="MainController">
+  <h1>{{title}}<h1>
 
-  <h3>{{title}}<h3>
-  <ul ng-repeat="name in names">
-    <li>{{name}}</li>
-  </ul>
+  <main ui-view class="content">
+      <!-- PAGE TEMPLATES INSERT HERE -->
+  </main>
+
 
   <script src="/app.js"></script>
   <script src="/controllers/main.controller.js"></script>

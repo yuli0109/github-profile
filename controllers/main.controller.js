@@ -8,7 +8,6 @@
 
     function MainController($scope) {
       $scope.title = 'Berry Zhong';
-      $scope.names = ['sb', 'yz'];
     }
 
 })();
