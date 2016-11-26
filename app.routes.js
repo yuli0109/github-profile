@@ -15,7 +15,8 @@
         })
         .state('aboutPage', {
           url: '/about',
-          templateUrl: 'templates/about.html'
+          templateUrl: 'templates/about.html',
+          controller: 'AboutController'
         })
         .state('projectsPage', {
           url: '/projects',

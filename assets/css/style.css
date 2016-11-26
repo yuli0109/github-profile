@@ -1,6 +1,15 @@
-h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  font-weight: bold;
+}
+
+.big-title {
+  margin-top: 70px;
+}
+
+div.home-img {
+  margin-top: 30px;
+  width: 70vw;
+  text-align: center;
 }
 
 #logo-img {
@@ -12,3 +21,18 @@ h4, h5, h6 {
 #logo-img:hover {
   background: rgba(1,1,1,0.1);
 }
+
+p.about-paragraph {
+  width: 60%;
+  font-size: 16px;
+  font-family: 'Maitree', serif;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.tripic-section {
+  width: 60vw;
+  margin-left: 40px;
+}
+
