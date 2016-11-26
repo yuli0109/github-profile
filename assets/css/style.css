@@ -31,8 +31,29 @@ p.about-paragraph {
   text-align: center;
 }
 
-.tripic-section {
-  width: 60vw;
-  margin-left: 40px;
+.projects-section {
+  display: flex;
+  flex-direction: column;
 }
+
+.card {
+  margin-top: 2vw;
+}
+
+.project-overview {
+  width: 700px;
+}
+
+.tripic-card {
+  width: 70vw;
+  align-self: flex-end;
+  margin-right: 5vw;
+}
+
+.pokemon-card {
+  align-self: flex-start;
+  width: 70vw;
+  margin-left: 7vw;
+}
+
 
