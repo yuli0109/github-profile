@@ -40,8 +40,12 @@ p.about-paragraph {
   margin-top: 2vw;
 }
 
+span.click-notice {
+  color: #ff9800 !important;
+}
+
 .project-overview {
-  width: 700px;
+  width: 600px;
 }
 
 .tripic-card {
@@ -56,4 +60,24 @@ p.about-paragraph {
   margin-left: 7vw;
 }
 
+.inline-list {
+  display: inline-flex;
+  justify-content: space-around;
+}
 
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 400px;
+}
+
+#github-link, #linkedIn-link {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+#email-contact {
+  margin-top: 30px;
+}

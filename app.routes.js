@@ -20,7 +20,8 @@
         })
         .state('projectsPage', {
           url: '/projects',
-          templateUrl: 'templates/projects.html'
+          templateUrl: 'templates/projects.html',
+          controller: 'ProjectsController'
         })
         .state('contactPage', {
           url: '/contact',

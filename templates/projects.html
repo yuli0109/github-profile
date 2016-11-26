@@ -1,10 +1,14 @@
 <div class="projects-section">
   <div class="card tripic-card">
-    <div class="card-image waves-effect waves-block waves-light">
+    <div class="card-image waves-effect waves-block waves-light hoverable">
+      <span class="card-title">Click For Details</span>
       <img width="200px" class="activator" src="../assets/img/tripific.jpeg">
     </div>
     <div class="card-content left">
       <p class="project-overview">Tripific is a road trip planning application, designed to help you get the most out of your next road trip! By incorporating Google Maps and Yelp technologies, Tripific allows you to customize the waypoints you'd like to stop at throughout your trip. See more, do more, and drive less!</p>
+      <ul class="inline-list" ng-repeat="feature in tripific_features">
+        <li class="chip" ng-class="feature.color">{{feature.technology}}</li>
+      </ul>
     </div>
     <div class="card-content right">
       <span class="card-title activator grey-text text-darken-4">Tripific</span>
@@ -16,18 +20,42 @@
     </div>
   </div>
   <div class="card pokemon-card">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img width="200px" class="activator" src="../assets/img/tripific.jpeg">
+    <div class="card-image waves-effect waves-block waves-light hoverable">
+      <span class="card-title click-notice">Click For Details</span>
+      <img width="200px" class="activator" src="../assets/img/pokemon.jpg">
     </div>
     <div class="card-content left">
-      <span class="card-title activator grey-text text-darken-4">Tripific</span>
-      <p><a href="https://github.com/yuli0109/Tripific">Repository</a></p>
+      <span class="card-title activator grey-text text-darken-4">Pokemon Dream</span>
+      <p><a href="https://github.com/yuli0109/pokemon-dream">Repository</a></p>
     </div>
     <div class="card-content right">
-      <p class="project-overview">Tripific is a road trip planning application, designed to help you get the most out of your next road trip! By incorporating Google Maps and Yelp technologies, Tripific allows you to customize the waypoints you'd like to stop at throughout your trip. See more, do more, and drive less!</p>
+      <p class="project-overview">Pokemon Dream is a realtime battling game between trainers. You can train your favourite pokemon and battle with other in realtime.</p>
+      <ul class="inline-list" ng-repeat="feature in pokemon_features">
+        <li class="chip" ng-class="feature.color">{{feature.technology}}</li>
+      </ul>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Tripific<i class="material-icons right">close</i></span>
+      <span class="card-title grey-text text-darken-4">Pokemon Dream<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+  <div class="card tripic-card">
+    <div class="card-image waves-effect waves-block waves-light hoverable">
+      <span class="card-title">Click For Details</span>
+      <img width="200px" class="activator" src="../assets/img/heath.jpg">
+    </div>
+    <div class="card-content left">
+      <p class="project-overview">HealDiE is a web app that could keep you tracking your food diet. Simply choose the food by category and enter the weight, the app would calcuate how much calories, protein and fat, so that your health will be taken care.</p>
+      <ul class="inline-list" ng-repeat="feature in health_features">
+        <li class="chip" ng-class="feature.color">{{feature.technology}}</li>
+      </ul>
+    </div>
+    <div class="card-content right">
+      <span class="card-title activator grey-text text-darken-4">Health Diet Everyday</span>
+      <p><a href="https://github.com/yuli0109/health_diet_everyday">Repository</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">HealDiE<i class="material-icons right">close</i></span>
       <p>Here is some more information about this product that is only revealed once clicked on.</p>
     </div>
   </div>
