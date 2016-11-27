@@ -102,3 +102,8 @@ span.click-notice {
 .chip {
   margin-left: 3px;
 }
+
+.footer-copyright {
+  background: none !important;
+  text-align: center;
+}
