@@ -1,6 +1,6 @@
 <div class="about-section">
-  <h4>About Me</h4>
-  <div class="container">
+  <div class="container about-me">
+    <h4>About Me</h4>
     <p class="about-paragraph">Hello everyone! My name is Berry and I am a web developer.
       In the past few years, I completed my master’s degree in engineering
       as a full time student at Cornell University. The experience of studying abroad in US
@@ -16,5 +16,42 @@
     <p class="about-paragraph">My web-development skill will be concentrated on client side development
     using popular framework such as Angular and React.js. Besides I have fundamental experience on programming Javascript running in Node.js to create and expose RESTful APIs to public.
     </p>
+  </div>
+  <div class="container about-edu">
+    <h4>Education</h4>
+    <table class="centered bordered striped">
+      <thead>
+        <tr>
+          <th>College</th>
+          <th>Degree</th>
+          <th>Major</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cornell University</td>
+          <td>Master of Engineering</td>
+          <td>Engineering Management</td>
+          <td>Aug, 2015 - May, 2016</td>
+        </tr>
+        <tr>
+          <td>Purdue University</td>
+          <td>Bachelor of Science</td>
+          <td>Mechanical Engineering</td>
+          <td>Aug, 2011 - May, 2015</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="container about-quali">
+    <h4>Web Developer</h4>
+    <div class="input-field">
+        <input id="filting-skill" type="text" class="validate" ng-model="filter_term">
+        <label for="filting-skill">Filter</label>
+    </div>
+    <ul class="skill-list" ng-repeat="feature in features | filter: filter_term">
+      <li class="chip" ng-class="feature.color">{{feature.technology}}</li>
+    </ul>
   </div>
 </div>

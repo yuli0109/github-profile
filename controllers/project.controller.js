@@ -4,16 +4,12 @@
     .module('myPortfolio')
     .controller('ProjectsController', ProjectsController)
 
-  ProjectsController.$inject = ['$scope'];
+  ProjectsController.$inject = ['$scope', 'FeatureService'];
 
-  function ProjectsController($scope) {
+  function ProjectsController($scope, FeatureService) {
 
+    const getColor = FeatureService.getColor;
 
-    $scope.health_features = ['Ruby on Rails', 'PostgreSQL', 'HTML5', 'CSS', 'Javascript']
-
-    const colorClass = ['pink lighten-3', 'indigo lighten-2', 'lime accent-1', 'amber accent-2',
-    'grey darken-2', 'deep-orange darken-1', 'green accent-2', 'teal', 'purple', 'red darken-1',
-    'yellow lighten-3', 'light-green', 'indigo accent-3', 'pink accent-3', 'pink lighten-1'];
 
     $scope.tripific_features = [
       {technology: 'GoogleMaps API', color: getColor()},
@@ -40,10 +36,6 @@
       {technology: 'Bootstrap', color: getColor()},
       {technology: 'Javascript', color: getColor()}
     ];
-
-    function getColor() {
-      return colorClass[Math.floor(Math.random()*colorClass.length)]
-    }
 
   }
 })()

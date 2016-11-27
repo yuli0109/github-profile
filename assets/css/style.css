@@ -22,12 +22,20 @@ div.home-img {
   background: rgba(1,1,1,0.1);
 }
 
+.about-edu {
+  margin-top: 8vw;
+}
+
+.about-section {
+  height: 1600px;
+}
+
 p.about-paragraph {
   width: 60%;
   font-size: 16px;
   font-family: 'Maitree', serif;
+  margin-top: 2vw;
   margin: 0 auto;
-  margin-top: 20px;
   text-align: center;
 }
 
@@ -80,4 +88,17 @@ span.click-notice {
 
 #email-contact {
   margin-top: 30px;
+}
+
+.skill-list {
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.about-quali {
+  margin-top: 10vw;
+}
+
+.chip {
+  margin-left: 3px;
 }
